@@ -1,8 +1,7 @@
 import { useState } from "react"
-import AddCategory from "./components/AddCategory"
-import GifGrid from "./components/GifGrid"
+import { AddCategory, GifGrid } from "./components"
 
-const GifExpertApp = () => {
+export const GifExpertApp = () => {
 
     const [ categories, setCategories ] = useState([])
 
@@ -30,5 +29,3 @@ const GifExpertApp = () => {
     </>
   )
 }
-
-export default GifExpertApp
