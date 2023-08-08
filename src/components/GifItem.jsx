@@ -1,3 +1,5 @@
+import React from 'react';
+import propTypes from "prop-types"
 
 export const GifItem = ( {title, url} ) => {
   return (
@@ -7,3 +9,12 @@ export const GifItem = ( {title, url} ) => {
     </div>
   )
 }
+
+GifItem.propTypes = {
+  title: propTypes.string.isRequired,
+  url: propTypes.string.isRequired,
+}
+
+
+
+// agregar prop-types => yarn add prop-types
